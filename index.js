@@ -6,6 +6,7 @@ const morgan = require('morgan')
 app.use(cors())
 morgan.token('body', (request) => JSON.stringify(request.body))
 app.use(morgan('tiny'))
+app.use(express.static('dist'))
 
 const unknownEndpoint = (request, response) => {
   response.status(404).send({ error: 'unknown endpoint' })
