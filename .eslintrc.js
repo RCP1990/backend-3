@@ -34,10 +34,7 @@ module.exports = {
 			'error',
 			'single'
 		],
-		'semi': [
-			'error',
-			'never'
-		],
+		'semi': 0,
 		'eqeqeq': 'error',
 		'no-trailing-spaces': 'error',
     'object-curly-spacing': [
